@@ -7,7 +7,7 @@ const initialState = {
   usia: 0
 };
 
-function reducer(state = initialState, action) {
+function reducer(state, action) {
   switch (action.type) {
     case "orang/updateNamaPanggilan":
       return { ...state, namaPanggilan: action.payload };
